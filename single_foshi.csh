@@ -32,7 +32,7 @@ unset noglob
 
 set cam_alarm_total = "$cam_alarm1 $cam_alarm2"
 
-# Create a startup entries
+# Create a startup entries in the log files:
 echo "`date`|$1|Initiating monitoring for $trig_camera ($cam_ip) via Shinobi ($shi_ip), appending to log file: logs/$1.log"
 echo "`date`|$1|Initiating monitoring for $trig_camera ($cam_ip) via Shinobi ($shi_ip), verifying the connection..." >> logs/$1.log
 
