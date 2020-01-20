@@ -4,7 +4,7 @@
 set script = "single_foshi.csh"
 set usage = "Usage: $0 {start|stop|restart|help} {.cfg|all} ; possible .cfg files found: `echo *.cfg`, or use all "
 set help = "Description: $0 will call '$script' for each .cfg file that has been passed to it and then drop to background.\
-Created by Svilen Savov (svilen@svilen.org)"
+Created by Svilen Savov (svilen@svilen.org), https://github.com/svilendotorg/foshi"
 
 # Basic input checks:
 if ( $1 == "help" ) then
