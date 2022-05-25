@@ -5,6 +5,7 @@ set script = "single_foshi.csh"
 set usage = "Usage: $0 {start|stop|restart|help} {.cfg|all} ; possible .cfg files found: `echo *.cfg`, or use all "
 set help = "Description: $0 will call '$script' for each .cfg file that has been passed to it and then drop to background.\
 Created by Svilen Savov (svilen@svilen.org), https://github.com/svilendotorg/foshi"
+set script_dir = `pwd`
 
 # Basic input checks:
 if ( $1 == "help" ) then
@@ -37,8 +38,8 @@ switch ( $1 )
 	case "restart":
 		foreach i ($cameras)
 			echo "Stopping the monitoring for $i..."
-                	echo "`date`|$i|Stopping the monitoring script for $i" >> logs/$i.log
-                	pkill -f "/bin/csh ./$script $i"
+			echo "`date`|$i|Stopping the monitoring script for $i" >> logs/$i.log
+			pkill -f "/bin/csh ./$script $i"
 		end
 	case "start":
 		

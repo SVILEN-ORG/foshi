@@ -1,5 +1,5 @@
 # Camera setup:
-set cam_ip = "http://192.168.0.101:88"		# IP:port of the camera web interface
+set cam_ip = "http://xx.xx.xx.xx:88"		# IP:port of the camera web interface
 set cam_usr = "admin"						# Camera username
 set cam_pwd = "password"					# Camera password
 set cam_alarm1 = "motionDetectAlarm"		# Comment out that line if you don't want to have alarm1 (motionDetectAlarm) enabled
@@ -7,7 +7,7 @@ set cam_alarm2 = "soundAlarm"				# Comment out that line if you don't want to ha
 set cam_alarm_timer = "1"					# How often in seconds to check the camera for new alarms
 
 # Shinobi setup:
-set shi_ip = "http://192.168.0.100:8080"		# Shinobi web interface
+set shi_ip = "http://xx.xx.xx.xx:8080"		# Shinobi web interface
 set shi_cam = "Gevu1tX3Eb"						# Monitor name
 set shi_apikey = "yourapikey"					# API Key ID
 set shi_grp = "yourgroupid"						# Group ID
